@@ -88,3 +88,20 @@ def BinarySearch(MyList,Target):
             return mid
     return "Number Not Found"
 #print BinarySearch(MyList,Target)
+
+
+#Boluwatife Aiki-Raji's Binary Search Function
+def bsearch (givenlist,element):
+	start = 0
+	end = len(givenlist)
+	midpoint = len(givenlist)//2
+	while start < end:
+		midpoint = (start+end)//2
+		if element < givenlist[midpoint]:
+			end = midpoint
+		elif element > givenlist[midpoint]:
+			start = midpoint + 1
+		else:
+			return midpoint
+	return -1
+# end of function
